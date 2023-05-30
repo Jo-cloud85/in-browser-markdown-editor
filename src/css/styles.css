@@ -241,7 +241,7 @@ input:checked + #toggle-label:after {
     background-position: center;
     height: var(--r22);
     width: var(--r22);
-    
+
 }
 
 #sub-header {
