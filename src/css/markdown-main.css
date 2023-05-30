@@ -35,6 +35,7 @@
 }
 
 #markdown-content {
+    display: block; /*required as its a label tag*/
     height: 100%;
     margin: var(--r10) 1rem;
 }
