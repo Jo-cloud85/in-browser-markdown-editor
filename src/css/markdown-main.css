@@ -27,6 +27,7 @@
     line-height: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 #markdown-content {

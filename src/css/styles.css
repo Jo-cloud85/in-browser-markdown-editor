@@ -100,6 +100,7 @@ body {
     letter-spacing: 2px;
     padding-bottom: var(--r30);
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 #sidebar-nav {
@@ -286,6 +287,7 @@ input:checked + #toggle-label:after {
     font-weight: 300;
     font-size: var(--r13);
     line-height: var(--r15);
+    margin-bottom: 0;
 }
 
 #doc-name-editable {
