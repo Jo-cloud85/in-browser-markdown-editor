@@ -1,0 +1,256 @@
+/* ---------------- Markdown main container --------------- */
+.markdown-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#markdown-input-section {
+    border-width: 0 1px 0 0;
+    border-color: var(--light-gray);
+    border-style: solid;
+}
+
+#markdown-input-header,
+#preview-header {
+    background-color: var(--very-light-gray);
+    display: flex;
+    align-items: center;
+    height: var(--r42);
+    padding: var(--r12) 1rem;
+}
+
+#markdown-input-header > label,
+#preview-header > label {
+    color: var(--gray);
+    font-size: var(--r14);
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#markdown-input-header > #preview-toggle {
+    display: none;
+}
+
+#markdown-content {
+    margin: var(--r10) 1rem;
+}
+
+#preview-content {
+    margin: var(--r22) 1rem;
+}
+
+#markdown-content {
+    height: 100%;
+}
+
+.markdown-main-container.hide-markdown {
+    grid-template-columns: 1fr;
+}
+
+#markdown-input-section.hide-markdown {
+    display: none;
+}
+
+#preview-content.hide-markdown {
+    margin: var(--r22) calc(25% + 1rem);
+}
+
+#markdown-input {
+    background-color: transparent;
+    border: none;
+    color: var(--dark-gray);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: var(--r14);
+    line-height: 1.5rem;
+    outline: none;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+#markdown-input::-webkit-scrollbar {
+    appearance: none;
+    display: none; /*to remove the space occupied by scrollbar*/
+}
+
+#preview-content {
+    font-family: 'Roboto Slab', serif;
+}
+
+#markdown-input-header, /* markdown-input-header part is for mobile version only*/
+#preview-header {
+    justify-content: space-between;
+}
+
+#preview-toggle {
+    cursor: pointer;
+    transition: .3s;
+}
+
+#preview-toggle:is(:hover, :focus) {
+    filter: invert(46%) sepia(11%) saturate(2448%) hue-rotate(314deg) brightness(109%) contrast(98%);
+}
+
+#preview-toggle > span {
+    display: block;
+    background-image: url(/public/assets/icon-show-preview.svg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: var(--r12);
+    width: 1rem;
+}
+
+#preview-toggle > span.hide { /*only appear on toggle*/
+    background-image: url(/public/assets/icon-hide-preview.svg);
+    height: 1rem;
+    width: var(--r14);
+}
+
+/* -------------- Overriding default marked styles ------------- */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: var(--r42);
+    margin-bottom: var(--r20);
+}
+
+h2 {
+    font-size: var(--r28);
+    font-weight: 300;
+    line-height: var(--r37);
+    margin-bottom: var(--r20);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: var(--r20);
+}
+
+h4 {
+    font-size: var(--r20);
+    font-weight: 700;
+    line-height: var(--r26);
+    margin-bottom: var(--r20);
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: var(--r21);
+    margin-bottom: var(--r20);
+}
+
+h6 {
+    color: var(--orange);
+    font-size: var(--r14);
+    font-weight: 700;
+    line-height: var(--r18);
+    margin-bottom: var(--r20);
+}
+
+p, li {
+    color: var(--gray);
+    font-size: var(--r14);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--r20);
+}
+
+li {
+    padding: 0 0 4px 8px;
+}
+
+ul>li::marker {
+    color: var(--orange);
+    font-size: var(--r10);
+}
+
+ol, ul {
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    background-color: var(--whitish-gray);
+    border-left: 5px solid var(--orange);
+    margin-bottom: var(--r20);
+    padding: 0;
+}
+
+blockquote > p {
+    color: var(--very-dark-gray);
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 1.5rem;
+}
+
+blockquote > p > a {
+    color: var(--very-dark-gray);
+}
+
+code {
+    color: var(--very-dark-gray);
+}
+
+pre {
+    background-color: var(--whitish-gray);
+    padding: 1.5rem;
+}
+
+/* ------------------- Delete-prompt box ----------------- */
+#delete-prompt-box-bg {
+    background-color: hsla(225, 9%, 9%, 0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#delete-prompt-box {
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 1.5rem;
+    position: absolute;
+    top: calc(50% - var(--r218)/2);
+    left: calc(50% - var(--r340)/2);
+    width: var(--r340);
+    z-index: 100;
+}
+
+#del-heading {
+    color: var(--very-dark-gray);
+    font-size: var(--r20);
+    font-weight: 700;
+    line-height: var(--r26);
+    margin-bottom: 1rem;
+}
+
+#del-msg {
+    font-size: var(--r14);
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#cfm-n-del-btn {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    width: 100%;
+    padding: var(--r10) 0 var(--r12) 0;
+    transition: .3s;
+}
+
+#cfm-n-del-btn:is(:hover, :focus) {
+    background-color: var(--orange-hover);
+}
