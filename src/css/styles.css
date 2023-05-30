@@ -282,7 +282,7 @@ input:checked + #toggle-label:after {
     row-gap: 3px;
 }
 
-#document-name > p {
+#document-name > span {
     color: var(--gray);
     font-weight: 300;
     font-size: var(--r13);

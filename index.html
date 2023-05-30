@@ -55,7 +55,7 @@
               <div id="document-section">
                 <img class="icon-doc" src="./public/assets/icon-document.svg" alt="icon-doc">
                 <label id="document-name">
-                  <p>Document Name</p>
+                  <span>Document Name</span>
                   <input id="doc-name-editable" value="welcome.md">
                 </label>
               </div>
@@ -81,9 +81,9 @@
             <div id="markdown-input-header">
               <p>Markdown</p>
             </div>
-            <label for="markdown-input" id="markdown-content">
-              <textarea id="markdown-input" wrap="hard" cols="0"></textarea>
-            </label>
+            <div id="markdown-content">
+              <textarea id="markdown-input" wrap="hard" cols="10" aria-labelledby="markdown input"></textarea>
+            </div>
           </div>
 
           <div id="preview-section">
