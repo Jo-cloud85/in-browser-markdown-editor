@@ -74,6 +74,10 @@ Users should be able to:
 
 In short, **use function declarations when you want to create a function on the global scope and make it available throughout your code**. Use function expressions to limit where the function is available, keep your global scope light, and maintain clean syntax.
 
+- Issues with using SVG as background-image links
+
+When the solution is uploaded live on Github pages, I realised all the url svg links for background images did not work at all. Apparently, Chrome has issues reading svg files unless you are attaching the svg files as img files. There needs to be some SVG to CSS converter for the svg links to work.
+
 ### Continued development
 
 To develop this into a full stack application.
@@ -82,6 +86,7 @@ To develop this into a full stack application.
 
 - [Bootstrap 5 Sidebar Menu - Simple](https://www.codeply.com/p/LXYndDByBf) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 -[How to use localStorage](https://www.section.io/engineering-education/how-to-use-localstorage-with-javascript/) - This guy did a simple well-explained example on how to use localStorage.
+-[SVG to CSS Converter](https://www.svgbackgrounds.com/tools/svg-to-css/)
 
 
 ## Author
