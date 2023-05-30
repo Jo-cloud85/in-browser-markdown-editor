@@ -30,16 +30,14 @@
     margin-bottom: 0;
 }
 
-#markdown-content {
-    margin: var(--r10) 1rem;
-}
-
 #preview-content {
     margin: var(--r22) 1rem;
 }
 
 #markdown-content {
+    display: block; /*required as its a label tag*/
     height: 100%;
+    margin: var(--r10) 1rem;
 }
 
 .markdown-main-container.hide-markdown {
