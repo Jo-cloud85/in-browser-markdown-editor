@@ -229,14 +229,14 @@ input:checked + #toggle-label:after {
 }
 
 #menu-close-toggle > span {
-    background-image: url(./public/assets/icon-menu.svg);
+    background-image: url('/public/assets/icon-menu.svg'); /* '' is required for svg*/
     background-position: center;
     height: var(--r18);
     width: var(--r30);
 }
 
 #menu-close-toggle > span.close { /*only appear on toggle*/
-    background-image: url(./public/assets/icon-close.svg);
+    background-image: url('/public/assets/icon-close.svg'); /* '' is required for svg*/
     background-repeat: no-repeat; 
     background-position: center;
     height: var(--r22);

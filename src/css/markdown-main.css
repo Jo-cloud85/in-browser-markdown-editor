@@ -93,7 +93,7 @@
 
 #preview-toggle > span {
     display: block;
-    background-image: url(./public/assets/icon-show-preview.svg);
+    background: url('/public/assets/icon-show-preview.svg'); /* '' is required for svg*/
     background-repeat: no-repeat; 
     background-position: center;
     height: var(--r12);
@@ -101,7 +101,7 @@
 }
 
 #preview-toggle > span.hide { /*only appear on toggle*/
-    background-image: url(./public/assets/icon-hide-preview.svg);
+    background: url('/public/assets/icon-hide-preview.svg'); /* '' is required for svg*/
     height: 1rem;
     width: var(--r14);
 }
