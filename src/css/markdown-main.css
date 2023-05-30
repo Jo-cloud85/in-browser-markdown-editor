@@ -19,18 +19,14 @@
     padding: var(--r12) 1rem;
 }
 
-#markdown-input-header > label,
-#preview-header > label {
+#markdown-input-header > p,
+#preview-header > p {
     color: var(--gray);
     font-size: var(--r14);
     font-weight: 500;
     line-height: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-#markdown-input-header > #preview-toggle {
-    display: none;
 }
 
 #markdown-content {

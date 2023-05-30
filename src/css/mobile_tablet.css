@@ -28,10 +28,6 @@
         grid-template-columns: 1fr;
     }
 
-    #markdown-input-header > #preview-toggle {
-        display: block; 
-    }
-
     #markdown-content,
     #preview-content,
     #preview-content.hide-markdown {

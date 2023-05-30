@@ -91,7 +91,7 @@ body {
     height: 100vh;
 }
 
-.docs-nav-section > label {
+.docs-nav-section > p {
     color: var(--gray);
     display: block;
     font-weight: 500;
@@ -228,14 +228,14 @@ input:checked + #toggle-label:after {
 }
 
 #menu-close-toggle > span {
-    background-image: url(/public/assets/icon-menu.svg);
+    background-image: url(./public/assets/icon-menu.svg);
     background-position: center;
     height: var(--r18);
     width: var(--r30);
 }
 
 #menu-close-toggle > span.close { /*only appear on toggle*/
-    background-image: url(/public/assets/icon-close.svg);
+    background-image: url(./public/assets/icon-close.svg);
     background-repeat: no-repeat; 
     background-position: center;
     height: var(--r22);
@@ -281,7 +281,7 @@ input:checked + #toggle-label:after {
     row-gap: 3px;
 }
 
-#document-name > label {
+#document-name > p {
     color: var(--gray);
     font-weight: 300;
     font-size: var(--r13);
