@@ -228,15 +228,15 @@ input:checked + #toggle-label:after {
     background-color: var(--orange);
 }
 
-#menu-close-toggle > span {
-    background-image: url('/public/assets/icon-menu.svg'); /* '' is required for svg*/
+#menu-close-toggle > div {
+    background-image: url('data:image/svg+xml,<svg width="30" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="%23FFF" fill-rule="evenodd"><path d="M0 0h30v2H0zM0 8h30v2H0zM0 16h30v2H0z"/></g></svg>');
     background-position: center;
     height: var(--r18);
     width: var(--r30);
 }
 
-#menu-close-toggle > span.close { /*only appear on toggle*/
-    background-image: url('/public/assets/icon-close.svg'); /* '' is required for svg*/
+#menu-close-toggle > div.close { /*only appear on toggle*/
+    background-image: url('data:image/svg+xml,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="%23FFF" fill-rule="evenodd"><path d="M2.1.686 23.315 21.9l-1.415 1.415L.686 2.1z"/><path d="M.686 21.9 21.9.685l1.415 1.415L2.1 23.314z"/></g></svg>');
     background-repeat: no-repeat; 
     background-position: center;
     height: var(--r22);
