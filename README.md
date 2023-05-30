@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jo-cloud85/in-browser-markdown-editor.git](https://github.com/Jo-cloud85/in-browser-markdown-editor.git)
+- Live Site URL: [https://jo-cloud85.github.io/in-browser-markdown-editor/](https://jo-cloud85.github.io/in-browser-markdown-editor/)
 
 
 ## My process
