@@ -34,6 +34,10 @@
         margin: 1rem;
     }
 
+    #markdown-input {
+        height: 100vh;
+    }
+
     #preview-toggle {
         position: absolute;
         top: calc(4.5rem + var(--r12) + 0.5rem - 5px);

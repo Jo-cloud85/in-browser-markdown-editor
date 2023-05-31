@@ -221,7 +221,7 @@ input:checked + #toggle-label:after {
     justify-content: center;
     min-width: 4.5rem;
     cursor: pointer;
-    transition: .3s;
+    transition: left .3s ease-in-out;
 }
 
 #menu-close-toggle:is(:hover, :focus) {
@@ -235,7 +235,7 @@ input:checked + #toggle-label:after {
     width: var(--r30);
 }
 
-#menu-close-toggle >span.close { /*only appear on toggle*/
+#menu-close-toggle > span.close { /*only appear on toggle*/
     background-image: url('data:image/svg+xml,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="%23FFF" fill-rule="evenodd"><path d="M2.1.686 23.315 21.9l-1.415 1.415L.686 2.1z"/><path d="M.686 21.9 21.9.685l1.415 1.415L2.1 23.314z"/></g></svg>');
     background-repeat: no-repeat; 
     background-position: center;
