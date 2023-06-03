@@ -1,4 +1,8 @@
 @media screen and (min-width: 600px) and (max-width: 999px) {
+    body {
+        min-height: 100svh;
+    }
+    
     #doc-name-editable {
         width: 12.5rem;
     }
@@ -9,6 +13,10 @@
 }
 
 @media screen and (max-width: 599px) {
+    body {
+        min-height: 100svh;
+    }
+    
     #brand-logo,
     #divider,
     #save-change-btn > span {
